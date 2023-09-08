@@ -16,6 +16,9 @@ comming soon...
 ## 🛠️ Made with
 
 - JDK 18
+- SPRING
+- HTML5
+- CSS5
 
 
 
