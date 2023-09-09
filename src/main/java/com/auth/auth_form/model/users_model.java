@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Objects;
 
 @Entity
 @Table(name = "users_table")
@@ -21,6 +22,8 @@ public class users_model {
 
     String email;
 
+
+    // Getters
     public Integer getId() {
         return id;
     }
@@ -38,6 +41,7 @@ public class users_model {
     }
 
 
+    // Setters
     public void setId(Integer id) {
         this.id = id;
     }
@@ -52,5 +56,27 @@ public class users_model {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        if (!super.equals(object)) return false;
+        users_model that = (users_model) object;
+        return java.util.Objects.equals(id, that.id) && java.util.Objects.equals(login, that.login) && java.util.Objects.equals(password, that.password) && java.util.Objects.equals(email, that.email);
+    }
+
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), id, login, password, email);
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "users_model{" +
+                "id=" + id +
+                ", login='" + login + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
