@@ -8,12 +8,6 @@
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="../styles/login-styles.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
-
-    <script src="../animations/p5.min.js"></script>
-    <script src="../animations/vanta.topology.min.js"></script>
-
 </head>
 <body>
 
@@ -31,18 +25,6 @@
         <button type="submit" class="btn">Login</button>
     </form>
 </div>
-<script>
-    VANTA.TOPOLOGY({
-        el: "body",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00
-    })
-</script>
 
 </body>
 </html>

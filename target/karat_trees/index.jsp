@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karat Trees</title>
     <link rel="stylesheet" type="text/css" href="resources/styles/home-styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
-    <script src="resources/animations/three.r134.min.js"></script>
-    <script src="resources/animations/vanta.clouds.min.js"></script>
+
 </head>
 <body>
 <div id="header" class="header">
@@ -21,17 +18,7 @@
         <a href="resources/login/login-page.jsp">Login</a>
         <a href="resources/cadastro/cadastro-page.jsp">Cadastro</a>
     </div>
-    <script>
-        var headerDiv = document.querySelector(".header");
-        VANTA.CLOUDS({
-            el: headerDiv,
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00
-        });
-    </script>
+
 </div>
 <div class="container">
     <div class="navbar">
