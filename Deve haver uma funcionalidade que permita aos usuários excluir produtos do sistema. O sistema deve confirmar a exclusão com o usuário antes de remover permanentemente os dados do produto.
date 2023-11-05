@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exclusão de Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        div.confirm-box {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        p.confirm-text {
+            color: #555;
+        }
+
+        input[type="submit"] {
+            background-color: #d9534f;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        a.button {
+            text-decoration: none;
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exclusão de Produto</h1>
+
+    <div class="confirm-box">
+        <p class="confirm-text">Tem certeza de que deseja excluir o produto "Nome do Produto" (Código do Produto)?</p>
+        <form action="processar_exclusao.php" method="POST">
+            <input type="submit" value="Confirmar Exclusão">
+        </form>
+        <a href="index.html" class="button">Cancelar</a>
+    </div>
+</body>
+</html>
