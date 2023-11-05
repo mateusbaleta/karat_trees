@@ -1,0 +1,31 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class ConsultaDados_Produtos {
+
+    public static void main(String[] args) {
+        String url = "jdbc:sqlite:minhabase.db"; // Substitua com a URL do banco de dados
+        try {
+            Connection conn = DriverManager.getConnection(url);
+            Statement statement = conn.createStatement();
+
+            String sql = "SELECT * FROM minha_tabela"; // Substitua com sua consulta SQL
+
+            ResultSet resultSet = statement.executeQuery(sql);
+
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id"); // Substitua com o nome da coluna que você deseja recuperar
+                String nome = resultSet.getString("nome");
+                System.out.println("ID: " + id + ", Nome: " + nome);
+            }
+
+            resultSet.close();
+            statement.close();
+            conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
